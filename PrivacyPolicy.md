@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Welcome to the application **Event Genie** (referred to as "the App"). Protecting your privacy and personal data is of utmost importance to us. This Privacy Policy explains how we collect, use, and safeguard your information.
+Welcome to the application **AI-Event For Gmail** (referred to as "the App"). Protecting your privacy and personal data is of utmost importance to us. This Privacy Policy explains how we collect, use, and safeguard your information.
 
 ---
 
