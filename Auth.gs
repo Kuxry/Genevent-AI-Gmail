@@ -31,6 +31,22 @@ function resetAuthorization() {
 }
 
 /**
+ * Sets up the OAuth2 service for accessing the Vertex AI API with a service account.
+ * This function uses the OAuth2 library to authenticate using the service account's credentials.
+ *
+ * @return {OAuth2.Service} The OAuth2 service object for Vertex AI API.
+ */
+function getService() {
+  return OAuth2.createService('vertex-ai')
+    .setTokenUrl('https://oauth2.googleapis.com/token')
+    .setPrivateKey(SERVICE_ACCOUNT.private_key) // SERVICE_ACCOUNT should be defined with private key details
+    .setIssuer(SERVICE_ACCOUNT.client_email)
+    .setPropertyStore(PropertiesService.getScriptProperties())
+    .setScope('https://www.googleapis.com/auth/cloud-platform'); // Ensure this scope covers Vertex AI
+}
+
+
+/**
  * Configures and returns an OAuth2 service for interacting with GCP APIs.
  *
  * @returns {OAuth2.Service} The configured OAuth2 service.
