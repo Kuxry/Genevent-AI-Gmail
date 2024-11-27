@@ -1,3 +1,5 @@
+![App Workflow](image.gif)
+
 # ✨ Event Genie - Gmail Add-on
 
 
